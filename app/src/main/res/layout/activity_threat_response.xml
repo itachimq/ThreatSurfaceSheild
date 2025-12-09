@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollThreatResponse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020617"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/responseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#F9FAFB"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/responseSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risk summary"
+            android:textSize="14sp"
+            android:textColor="#E5E7EB"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/responseReasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signals"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/responsePerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High‑risk permissions"
+            android:textSize="13sp"
+            android:textColor="#FBBF24"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/responseActionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended actions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#F9FAFB"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonUninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uninstall / disable app"
+            android:backgroundTint="#DC2626"
+            android:textColor="#F9FAFB"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonManagePerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review app permissions"
+            android:backgroundTint="#F97316"
+            android:textColor="#111827"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonAccessibilitySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Accessibility access"
+            android:backgroundTint="#22C55E"
+            android:textColor="#0B1120"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonOverlaySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check 'draw over other apps'"
+            android:backgroundTint="#22C55E"
+            android:textColor="#0B1120"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonUnknownSources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review unknown sources settings"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#F9FAFB"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

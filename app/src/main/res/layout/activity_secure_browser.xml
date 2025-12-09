@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050812">
+
+    <!-- This ScrollView holds all the informational cards -->
+    <ScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Top bar -->
+            <LinearLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#111827"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_shield"
+                    app:tint="#60A5FA"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secure Browser"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI-Powered Web Protection"
+                        android:textColor="#9CA3AF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Input card -->
+            <LinearLayout
+                android:id="@+id/inputCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#111827"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan a Link"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/urlInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints="url"
+                    android:background="#050812"
+                    android:hint="https://example.com/login"
+                    android:inputType="textUri"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#9CA3AF" />
+
+                 <Button
+                    android:id="@+id/scanButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#2563EB"
+                    android:text="Scan URL"
+                    android:textColor="@android:color/white" />
+
+                 <Button
+                    android:id="@+id/historyButton"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="View Scan History"
+                    android:textColor="#9CA3AF"
+                    app:strokeColor="#202A40" />
+
+            </LinearLayout>
+
+            <!-- Result card -->
+            <LinearLayout
+                android:id="@+id/resultCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#111827"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/resultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Results will appear here."
+                    android:textColor="#9CA3AF" />
+
+                <Button
+                    android:id="@+id/fullScreenButton"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Full Screen"
+                    android:textColor="#60A5FA"
+                    android:visibility="gone"
+                    app:strokeColor="#202A40" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- This WebView will fill the space below the cards -->
+    <WebView
+        android:id="@+id/secureWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contentScrollView" />
+
+</RelativeLayout>

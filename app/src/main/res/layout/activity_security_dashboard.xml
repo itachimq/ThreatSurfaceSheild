@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dashboardHeadlineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security Status"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dashboardDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Loading..." />
+
+    <Button
+        android:id="@+id/openPhishingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phishing &amp; Secure Browser" />
+
+    <Button
+        android:id="@+id/openMalwareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Malware &amp; Risk Scanner" />
+
+    <Button
+        android:id="@+id/openPrivacyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Privacy Checker" />
+
+    <Button
+        android:id="@+id/openNetworkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Safety Scanner" />
+
+</LinearLayout>

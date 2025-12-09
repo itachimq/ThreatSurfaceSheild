@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ThreatSurfaceShield" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mcafeeRed</item>
+        <item name="colorPrimaryVariant">@color/mcafeeRedDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/mcafeeRedDark</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="Theme.ThreatSurfaceShield.NoActionBar" parent="Theme.ThreatSurfaceShield">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mcafeeRed">#C8102E</color>
+    <color name="mcafeeRedDark">#A20D24</color>
+    <color name="backgroundLight">#F5F5F5</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#757575</color>
+    <color name="safeGreen">#008000</color>
+    <color name="amber">#92400E</color>
+    <color name="red">#DC2626</color>
+    <color name="green">#16A34A</color>
+    <color name="grey">#6B7280</color>
+    <color name="amber_dark">#EAB308</color>
+    <color name="orange_dark">#F97316</color>
+    <color name="amber_light">#FDE68A</color>
+    <color name="grey_light">#E5E7EB</color>
+    <color name="blue_light">#60A5FA</color>
+    <color name="grey_dark">#1F2933</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ThreatSurface Shield</string>
+    <string name="shield_emoji">🛡️</string>
+    <string name="title_anti_phishing">Anti-phishing &amp; URL protection</string>
+    <string name="protection_status">Protection: ACTIVE</string>
+    <string name="scan_stats">Total scans: 0 · Threats blocked: 0</string>
+    <string name="scan_a_link">Scan a link</string>
+    <string name="scan_a_link_description">Paste or type a URL below. ThreatSurface Shield will analyze it and block suspicious pages.</string>
+    <string name="url_input_hint">https://example.com/login</string>
+    <string name="scan_url_button">Scan URL</string>
+    <string name="history_button">History</string>
+    <string name="open_in_browser_button">Open in browser (allowed only)</string>
+
+    <!-- MainActivity Strings -->
+    <string name="please_enter_url">Please enter a URL.</string>
+    <string name="phishing_suspected">⚠️ PHISHING SUSPECTED\nRisk: %1$s (%2$d)\nThis link has been blocked by ThreatSurface Shield.</string>
+    <string name="link_allowed">✅ Link allowed\nRisk: %1$s (%2$d)\nLoaded in secure view.</string>
+    <string name="protection_status_threats_blocked">Protection: ACTIVE – threats blocked: %1$d</string>
+    <string name="protection_status_no_threats">Protection: ACTIVE – no threats blocked yet</string>
+    <string name="scan_stats_formatted">Total scans: %1$d · Threats blocked: %2$d</string>
+    <string name="history_entry">Scan #%1$d\nURL: %2$s\nRisk: %3$s (%4$d)\nAction: %5$s</string>
+    <string name="no_scans_performed">No scans performed yet.</string>
+    <string name="scan_history_title">Scan history</string>
+    <string name="ok_button">OK</string>
+    <string name="could_not_open_browser">Could not open in browser.</string>
+</resources>
